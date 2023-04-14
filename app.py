@@ -17,8 +17,6 @@ app = dash.Dash(__name__)
 
 server = app.server 
 
-
-import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 import seaborn as sns; sns.set()
 
