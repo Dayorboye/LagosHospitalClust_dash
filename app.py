@@ -1,3 +1,4 @@
+import pathlib
 import pandas as pd
 import dash
 import dash_html_components as html
@@ -13,10 +14,16 @@ import sys
 print(sys.version)
 # Dash Application
 
+# PATH = pathlib.Path(__file__).parent
+# DATA_PATH = PATH.joinpath("data").resolve()
+# datasets = pd.read_csv(DATA_PATH.joinpath("lagosHosptals.xlsx"))
+
 app = dash.Dash(__name__)
 
-server = app.server 
+# server = app.server
 
+
+import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 import seaborn as sns; sns.set()
 
@@ -92,6 +99,9 @@ app.layout = html.Div(children=[
                         
                         html.Div(children=[dcc.Graph(id='plot', figure= fig_table)],
                         style={"background-color": "#0e1012","padding": "65px", "justify-content": "space-around","height":"50vh"}),
+                        
+                        html.Div(children=[html.Iframe(id = 'map1', srcDoc = open('Centroid_Hosp.html', 'r').read(), width ='100%', height = '600',)],
+                        style={"background-color": "#0e1012","padding": "65px","justify-content": "space-around"}),
          
          
         # html.Div(dcc.Graph(id='plot1', ),
