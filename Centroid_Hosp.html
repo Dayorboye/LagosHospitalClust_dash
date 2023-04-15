@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_167abeb4cbf632328eb2e5df214ef117 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_167abeb4cbf632328eb2e5df214ef117" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_167abeb4cbf632328eb2e5df214ef117 = L.map(
+                "map_167abeb4cbf632328eb2e5df214ef117",
+                {
+                    center: [6.465422, 3.406448],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_395f33b77b437a2ff9127925f9c0d46e = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_167abeb4cbf632328eb2e5df214ef117);
+        
+    
+            var marker_9319039674f93c50c00be1a64967d302 = L.marker(
+                [6.459010000000049, 4.002142500000049],
+                {}
+            ).addTo(map_167abeb4cbf632328eb2e5df214ef117);
+        
+    
+        var popup_70c6c3ea289145add0572c72eb441c93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c95cbfbc4926cd53acfe34f4713f6e77 = $(`<div id="html_c95cbfbc4926cd53acfe34f4713f6e77" style="width: 100.0%; height: 100.0%;">Ibeju/Lekki, Lagos, NGA</div>`)[0];
+                popup_70c6c3ea289145add0572c72eb441c93.setContent(html_c95cbfbc4926cd53acfe34f4713f6e77);
+            
+        
+
+        marker_9319039674f93c50c00be1a64967d302.bindPopup(popup_70c6c3ea289145add0572c72eb441c93)
+        ;
+
+        
+    
+    
+            var marker_9289d5ba93f5f5fa26f2aac50c723a15 = L.marker(
+                [6.508626873949221, 3.342483752091617],
+                {}
+            ).addTo(map_167abeb4cbf632328eb2e5df214ef117);
+        
+    
+        var popup_3129549611c3e1e2337429c9e1e2f86a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da25778791e08039e9ccdb003de4d59b = $(`<div id="html_da25778791e08039e9ccdb003de4d59b" style="width: 100.0%; height: 100.0%;">Adamson St, Surulere, Lagos , NGA</div>`)[0];
+                popup_3129549611c3e1e2337429c9e1e2f86a.setContent(html_da25778791e08039e9ccdb003de4d59b);
+            
+        
+
+        marker_9289d5ba93f5f5fa26f2aac50c723a15.bindPopup(popup_3129549611c3e1e2337429c9e1e2f86a)
+        ;
+
+        
+    
+    
+            var marker_a3a855ae01b1e78584d785fe1b22e7b0 = L.marker(
+                [6.452001426524488, 3.0834785751073843],
+                {}
+            ).addTo(map_167abeb4cbf632328eb2e5df214ef117);
+        
+    
+        var popup_f4d58d5ef3341dd106794bbd7ffe47ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b44fd3289ce7d91719fefe8edb0189c = $(`<div id="html_3b44fd3289ce7d91719fefe8edb0189c" style="width: 100.0%; height: 100.0%;">Badagry, Lagos, NGA</div>`)[0];
+                popup_f4d58d5ef3341dd106794bbd7ffe47ac.setContent(html_3b44fd3289ce7d91719fefe8edb0189c);
+            
+        
+
+        marker_a3a855ae01b1e78584d785fe1b22e7b0.bindPopup(popup_f4d58d5ef3341dd106794bbd7ffe47ac)
+        ;
+
+        
+    
+    
+            var marker_ee2cafb46a874b2e308b27f587b08a9f = L.marker(
+                [6.4440902371209345, 3.452711326205701],
+                {}
+            ).addTo(map_167abeb4cbf632328eb2e5df214ef117);
+        
+    
+        var popup_f5debbea6a974549b50ea2ae3edb6ce4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6127f45f2ca8beedfa60d1ce714a9a77 = $(`<div id="html_6127f45f2ca8beedfa60d1ce714a9a77" style="width: 100.0%; height: 100.0%;">Eti-Osa, Lagos, NGA</div>`)[0];
+                popup_f5debbea6a974549b50ea2ae3edb6ce4.setContent(html_6127f45f2ca8beedfa60d1ce714a9a77);
+            
+        
+
+        marker_ee2cafb46a874b2e308b27f587b08a9f.bindPopup(popup_f5debbea6a974549b50ea2ae3edb6ce4)
+        ;
+
+        
+    
+    
+            var marker_ea0c71f3797b20ea51b7023815ad46ed = L.marker(
+                [6.612619701015232, 3.3411791109934574],
+                {}
+            ).addTo(map_167abeb4cbf632328eb2e5df214ef117);
+        
+    
+        var popup_3a601b8a7995538c0534129aa2fda998 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36dc5c38e09bec887a479a6489773be4 = $(`<div id="html_36dc5c38e09bec887a479a6489773be4" style="width: 100.0%; height: 100.0%;">Ayodele Odiyan St, Ikeja, Lagos , NGA</div>`)[0];
+                popup_3a601b8a7995538c0534129aa2fda998.setContent(html_36dc5c38e09bec887a479a6489773be4);
+            
+        
+
+        marker_ea0c71f3797b20ea51b7023815ad46ed.bindPopup(popup_3a601b8a7995538c0534129aa2fda998)
+        ;
+
+        
+    
+    
+            var marker_2ad71395021fcf1a3582a6bd9dc9b18a = L.marker(
+                [6.61104021667783, 3.5637558375116956],
+                {}
+            ).addTo(map_167abeb4cbf632328eb2e5df214ef117);
+        
+    
+        var popup_e3c9c9d95645be72d2fc63164ccb75d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecca67877f99dd0e1977173a666a2f08 = $(`<div id="html_ecca67877f99dd0e1977173a666a2f08" style="width: 100.0%; height: 100.0%;">Eruwen Rd, Ikorodu, Lagos , NGA</div>`)[0];
+                popup_e3c9c9d95645be72d2fc63164ccb75d4.setContent(html_ecca67877f99dd0e1977173a666a2f08);
+            
+        
+
+        marker_2ad71395021fcf1a3582a6bd9dc9b18a.bindPopup(popup_e3c9c9d95645be72d2fc63164ccb75d4)
+        ;
+
+        
+    
+</script>
+</html>
