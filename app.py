@@ -7,6 +7,11 @@ from dash.dependencies import Input, Output, State
 import plotly.graph_objects as go
 import plotly.express as px
 from dash import no_update
+from sklearn.cluster import KMeans
+import seaborn as sns; sns.set()
+
+from geopandas.tools import geocode
+from geopy.geocoders import ArcGIS
 # from jobs import app
 # from jobs.routes import *
 
@@ -22,9 +27,6 @@ app = dash.Dash(__name__)
 
 # server = app.server
 
-
-from sklearn.cluster import KMeans
-import seaborn as sns; sns.set()
 
 
 # Datasets for The Hospital Cluster Visualization
@@ -60,9 +62,6 @@ Centroid = KMNs.cluster_centers_
 a = Centroid[:,0]
 b = Centroid[:,1]
 
-from geopandas.tools import geocode
-import pandas as pd
-from geopy.geocoders import ArcGIS
 
 geolocator = ArcGIS()
 
