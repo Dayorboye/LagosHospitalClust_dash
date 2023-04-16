@@ -7,11 +7,9 @@ from dash.dependencies import Input, Output, State
 import plotly.graph_objects as go
 import plotly.express as px
 from dash import no_update
-from sklearn.cluster import KMeans
-import seaborn as sns; sns.set()
 
-from geopandas.tools import geocode
-from geopy.geocoders import ArcGIS
+
+
 # from jobs import app
 # from jobs.routes import *
 
@@ -42,6 +40,9 @@ geo_datas["lon"] = datasets_long
 geo_datas["lat"]
 geo_datas["lon"]
 
+from sklearn.cluster import KMeans
+import seaborn as sns; sns.set()
+
 
 K_clusters = range(1,10)
 kmeans = [KMeans(n_clusters=i) for i in K_clusters]
@@ -62,7 +63,8 @@ Centroid = KMNs.cluster_centers_
 a = Centroid[:,0]
 b = Centroid[:,1]
 
-
+from geopandas.tools import geocode
+from geopy.geocoders import ArcGIS
 geolocator = ArcGIS()
 
 Centriod_df = pd.DataFrame(Centroid, columns=["Latitude","Longitude"])
