@@ -7,6 +7,7 @@ from dash.dependencies import Input, Output, State
 import plotly.graph_objects as go
 import plotly.express as px
 from dash import no_update
+import sklearn
 # from jobs import app
 # from jobs.routes import *
 
