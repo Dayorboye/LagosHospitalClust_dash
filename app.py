@@ -17,7 +17,7 @@ server = app.server
 
 
 # Datasets for The Hospital Cluster Visualization
-datasets = pd.read_excel("lagosHosptals.xlsx")
+datasets = pd.read_csv("lagosHosptals.csv")
 
 datasets_lat = datasets[["lat"]]
 datasets_long = datasets[["long"]]
