@@ -2,6 +2,6 @@ dash==2.6.0
 pandas
 gunicorn
 plotly==5.8.0
-pip install --upgrade
+
 
 
