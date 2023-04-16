@@ -5,7 +5,7 @@ import dash_core_components as dcc
 from dash.dependencies import Input, Output, State
 import plotly.graph_objects as go
 import plotly.express as px
-from dash import no_update
+
 
 # Dash Application
 
@@ -13,9 +13,6 @@ from dash import no_update
 app = dash.Dash(__name__)
 
 server = app.server
-
-from sklearn.cluster import KMeans
-import seaborn as sns; sns.set()
 
 
 # Datasets for The Hospital Cluster Visualization
