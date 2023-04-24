@@ -3,6 +3,7 @@ pandas
 gunicorn
 plotly==5.8.0
 scipy
+dash_bootstrap_components==1.0.3
 
 
 
