@@ -145,7 +145,6 @@ header = 'LAGOS HOSPITAL CLUSTER'
 
 
 # Build App
-app = Dash(external_stylesheets=[dbc.themes.SLATE])
 
 app.layout = html.Div([
     dbc.Card(
